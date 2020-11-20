@@ -1,16 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="urlparam.js"></script>
+  <style>
+    img {
+      margin-top: 10px;
+      margin-bottom: 80px;
+    }
+
+    ul {
+      display: flex;
+      width: 50%;
+      list-style:none;
+    }
+
+    li {
+      width: 100px;
+      height: 50px;
+      border: 1px solid #333;
+      cursor: pointer;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li.on {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
 </head>
+
 <body>
   <p>If you add parameters end of URL, you can use these as javascript variables.</p>
-  <br/>
-  <p>example</p>
-  <p>In this https://sinseiki.github.io/urlparam.js/index.html?a=1&b=abc</p>
+  <br />
+  <h2>example 1</h2>
+  <p>In this <a href="https://sinseiki.github.io/urlparam.js/index.html?a=1&b=abc">https://sinseiki.github.io/urlparam.js/index.html?a=1&b=abc</a></p>
   <p>you can use variables "a='1'", "b='abc'"</p>
+
+  <img alt="example" src="example.gif" />
+
+  <h2>example 2</h2>
+  <p>In this <a href="https://sinseiki.github.io/urlparam.js/index.html?tabNum=2">https://sinseiki.github.io/urlparam.js/index.html?tabNum=2</a></p>
+  <p>you can use tabmenu colored on the second tab with this code.</p>
+  <pre>
+    const lis = document.querySelectorAll('li');
+    if (tabNum) {
+      lis[tabNum - 1].classList.add('on');
+    }
+  </pre>
+
+  <ul>
+    <li>Tab1</li>
+    <li>Tab2</li>
+    <li>Tab3</li>
+    <li>Tab4</li>
+  </ul>
+
+  <script>
+    const lis = document.querySelectorAll('li');
+    if (tabNum) {
+      lis[tabNum - 1].classList.add('on');
+    }
+  </script>
 </body>
+
 </html>
