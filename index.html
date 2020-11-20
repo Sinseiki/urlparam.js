@@ -7,28 +7,36 @@
   <title>Document</title>
   <script src="urlparam.js"></script>
   <style>
+    .wrap{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     img {
       margin-top: 10px;
       margin-bottom: 80px;
+      margin-right: 150px;
     }
 
     ul {
       display: flex;
       width: 50%;
-      list-style:none;
+      list-style: none;
     }
 
-    li {
+    li a {
       width: 100px;
       height: 50px;
       border: 1px solid #333;
       cursor: pointer;
-      display:flex;
+      display: flex;
       justify-content: center;
       align-items: center;
+      color: #333;
+      text-decoration: none;
     }
 
-    li.on {
+    li.on a {
       background-color: #333;
       color: #fff;
     }
@@ -38,29 +46,38 @@
 <body>
   <p>If you add parameters end of URL, you can use these as javascript variables.</p>
   <br />
-  <h2>example 1</h2>
-  <p>In this <a href="https://sinseiki.github.io/urlparam.js/index.html?a=1&b=abc">https://sinseiki.github.io/urlparam.js/index.html?a=1&b=abc</a></p>
-  <p>you can use variables "a='1'", "b='abc'"</p>
-
-  <img alt="example" src="example.gif" />
-
-  <h2>example 2</h2>
-  <p>In this <a href="https://sinseiki.github.io/urlparam.js/index.html?tabNum=2">https://sinseiki.github.io/urlparam.js/index.html?tabNum=2</a></p>
-  <p>you can use tabmenu colored on the second tab with this code.</p>
-  <pre>
-    const lis = document.querySelectorAll('li');
-    if (tabNum) {
-      lis[tabNum - 1].classList.add('on');
-    }
-  </pre>
-
-  <ul>
-    <li>Tab1</li>
-    <li>Tab2</li>
-    <li>Tab3</li>
-    <li>Tab4</li>
-  </ul>
-
+  <div class="wrap">
+    <div>
+      <h2>example 1</h2>
+      <p>In this <a
+          href="https://sinseiki.github.io/urlparam.js/index.html?a=1&b=abc">https://sinseiki.github.io/urlparam.js/index.html?a=1&b=abc</a>
+      </p>
+      <p>you can use variables "a='1'", "b='abc'"</p>
+      <img alt="example" src="example.gif" />
+    </div>
+    <div>
+      <h2>example 2</h2>
+      <p>In this <a
+          href="https://sinseiki.github.io/urlparam.js/index.html?tabNum=2">https://sinseiki.github.io/urlparam.js/index.html?tabNum=2</a>
+      </p>
+      <p>you can use tabmenu colored on the second tab with this code.</p>
+      <pre>
+      const lis = document.querySelectorAll('li');
+      if (tabNum) {
+        lis[tabNum - 1].classList.add('on');
+      }
+    </pre>
+  
+      <ul>
+        <li><a href="?tabNum=1">Tab1</a></li>
+        <li><a href="?tabNum=2">Tab2</a></li>
+        <li><a href="?tabNum=3">Tab3</a></li>
+        <li><a href="?tabNum=4">Tab4</a></li>
+      </ul>
+  
+    </div>
+  </div>
+  
   <script>
     const lis = document.querySelectorAll('li');
     if (tabNum) {
