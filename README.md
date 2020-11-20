@@ -1,4 +1,4 @@
-# URLParam.js
+# urlparam.js
 URLParam.js is a Javascript Plugin to use URL Parameters as Javascript Variables.
 
 Download js file → <a id="raw-url" href="https://sinseiki.github.io/urlparam.js/urlparam.js" download target="_blank">urlparam.js</a>
