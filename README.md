@@ -2,7 +2,7 @@
 URLParam.js is a Javascript Plugin to use URL Parameters as Javascript Variables.
 
 
-https://sinseiki.github.io/urlparam.js
+https://sinseiki.github.io/urlparam.js You can see 2 examples on this page.
 
 If you add parameters end of URL, you can use these as javascript variables.
 
