@@ -63,10 +63,10 @@
       </p>
       <p>you can use tabmenu colored on the second tab with this code.</p>
       <pre>
-      const lis = document.querySelectorAll('li');
-      if (tabNum) {
-        lis[tabNum - 1].classList.add('on');
-      }
+        const lis = document.querySelectorAll('li');
+        if (typeof tabNum === 'string') {
+          lis[tabNum - 1].classList.add('on');
+        }
     </pre>
   
       <ul>
@@ -81,7 +81,7 @@
   
   <script>
     const lis = document.querySelectorAll('li');
-    if (tabNum) {
+    if (typeof tabNum === 'string') {
       lis[tabNum - 1].classList.add('on');
     }
   </script>
