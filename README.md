@@ -9,6 +9,8 @@ https://sinseiki.github.io/urlparam.js
 
 If you add parameters end of URL, you can use these as javascript variables.
 
+And you can call parameters manually by using 'urlparam()'.
+
 <hr>
 example
 
