@@ -12,5 +12,3 @@ function urlparam(){
     window[_aParam[0]] = _aParam[1];
   };
 }
-
-urlparam();

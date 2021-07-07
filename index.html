@@ -7,7 +7,7 @@
   <title>Document</title>
   <script src="urlparam.js"></script>
   <style>
-    .wrap{
+    .wrap {
       display: flex;
       flex-wrap: wrap;
     }
@@ -45,7 +45,7 @@
 </head>
 
 <body>
-  <p>If you add parameters end of URL, you can use these as javascript variables.</p>
+  <p>If you add parameters end of URL, you can use these as javascript variables with urlparam()</p>
   <br />
   <div class="wrap">
     <div>
@@ -67,19 +67,20 @@
         if (typeof tabNum === 'string') {
           lis[tabNum - 1].classList.add('on');
         }
-    </pre>
-  
+      </pre>
+
       <ul>
         <li><a href="?tabNum=1">Tab1</a></li>
         <li><a href="?tabNum=2">Tab2</a></li>
         <li><a href="?tabNum=3">Tab3</a></li>
         <li><a href="?tabNum=4">Tab4</a></li>
       </ul>
-  
+
     </div>
   </div>
-  
+
   <script>
+    urlparam();
     const lis = document.querySelectorAll('li');
     if (typeof tabNum === 'string') {
       lis[tabNum - 1].classList.add('on');
