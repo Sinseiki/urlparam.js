@@ -11,7 +11,7 @@ If you add parameters end of URL, you can use these as javascript variables.
 
 Using this JS file, call parameter manually by using 'urlparam' function.
 
-
+<hr>
 
 Getting a parameter → urlparam('a string parameter');
 
