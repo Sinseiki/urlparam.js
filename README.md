@@ -11,8 +11,12 @@ If you add parameters end of URL, you can use these as javascript variables.
 
 Using this JS file, call parameter manually by using 'urlparam' function.
 
+
+
 Getting a parameter → urlparam('a string parameter');
+
 Getting parameters → urlparam(['string parameter', 'string parameter', 'string parameter', ...]);
+
 Getting all parameters → urlparam();
 
 
